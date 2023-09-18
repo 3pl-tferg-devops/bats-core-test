@@ -16,3 +16,8 @@ setup() {
     run project.sh
     assert_output --partial 'Hello'
 }
+
+@test "Check alternative function" {
+    run project.sh alt_function
+    assert_output --partial 'Goodbye'
+}
