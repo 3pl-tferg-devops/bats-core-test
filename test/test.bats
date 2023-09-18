@@ -21,3 +21,9 @@ setup() {
     run project.sh alt_function
     assert_output --partial 'Goodbye'
 }
+
+@test "Check function can return value" {
+    run project.sh return_value "value"
+    assert_output --partial 'value'
+}
+

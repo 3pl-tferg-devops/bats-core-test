@@ -2,6 +2,12 @@
 
 set -e
 
+return_value() {
+  local value=$1
+
+  return $value
+}
+
 alt_function() {
   echo "Goodbye"
 }
